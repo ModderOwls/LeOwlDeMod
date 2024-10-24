@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeOwlDeMod", "LeOwlDeMod\LeOwlDeMod.csproj", "{87848486-E3BE-45FB-A2BF-82700C478737}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87848486-E3BE-45FB-A2BF-82700C478737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87848486-E3BE-45FB-A2BF-82700C478737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87848486-E3BE-45FB-A2BF-82700C478737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87848486-E3BE-45FB-A2BF-82700C478737}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15A17720-9F6E-4576-8A98-45B8280AAF57}
+	EndGlobalSection
+EndGlobal

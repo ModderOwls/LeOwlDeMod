@@ -1,0 +1,10 @@
+D:\Modding\LethalCompany\LeOwlDeMod\LeOwlDeMod\bin\Debug\netstandard2.1\LeOwlDeMod.deps.json
+D:\Modding\LethalCompany\LeOwlDeMod\LeOwlDeMod\bin\Debug\netstandard2.1\LeOwlDeMod.dll
+D:\Modding\LethalCompany\LeOwlDeMod\LeOwlDeMod\obj\Debug\netstandard2.1\LeOwlDeMod.csproj.AssemblyReference.cache
+D:\Modding\LethalCompany\LeOwlDeMod\LeOwlDeMod\obj\Debug\netstandard2.1\MyPluginInfo.cs
+D:\Modding\LethalCompany\LeOwlDeMod\LeOwlDeMod\obj\Debug\netstandard2.1\LeOwlDeMod.GeneratedMSBuildEditorConfig.editorconfig
+D:\Modding\LethalCompany\LeOwlDeMod\LeOwlDeMod\obj\Debug\netstandard2.1\LeOwlDeMod.AssemblyInfoInputs.cache
+D:\Modding\LethalCompany\LeOwlDeMod\LeOwlDeMod\obj\Debug\netstandard2.1\LeOwlDeMod.AssemblyInfo.cs
+D:\Modding\LethalCompany\LeOwlDeMod\LeOwlDeMod\obj\Debug\netstandard2.1\LeOwlDeMod.csproj.CoreCompileInputs.cache
+D:\Modding\LethalCompany\LeOwlDeMod\LeOwlDeMod\obj\Debug\netstandard2.1\LeOwlDeMod.dll
+D:\Modding\LethalCompany\LeOwlDeMod\LeOwlDeMod\obj\Debug\netstandard2.1\LeOwlDeMod.sourcelink.json
