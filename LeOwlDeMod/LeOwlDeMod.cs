@@ -1,9 +1,14 @@
+using UnityEngine;
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
-using LeOwlDeMod.Patches;
+using LeOwlDeMod.Hooks;
 using LobbyCompatibility.Attributes;
 using LobbyCompatibility.Enums;
+using MonoMod.RuntimeDetour;
+using System.Collections.Generic;
+using System.Reflection;
+using System.IO;
 
 namespace LeOwlDeMod
 {
@@ -14,38 +19,65 @@ namespace LeOwlDeMod
     {
         public static LeOwlDeMod Instance { get; private set; } = null!;
         internal new static ManualLogSource Logger { get; private set; } = null!;
-        internal static Harmony? Harmony { get; set; }
+        internal static List<IDetour> Hooks { get; set; } = new List<IDetour>();
+
+        public static AssetBundle customAssets;
+        public static GameObject prefabBodalicious;
 
         private void Awake()
         {
             Logger = base.Logger;
             Instance = this;
 
-            Harmony.CreateAndPatchAll(typeof(PlayerExhaustDeath));
+            string sAssemblyLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            customAssets = AssetBundle.LoadFromFile(Path.Combine(sAssemblyLocation, "modassets"));
+            if (customAssets == null)
+            {
+                Logger.LogInfo($"custom assets file not found!");
+                return;
+            }
 
-            Patch();
+            Logger.LogInfo($"all paths: " + customAssets.GetAllAssetNames());
+
+            prefabBodalicious = customAssets.LoadAsset<GameObject>("Bodalicious");
+
+            Hook();
 
             Logger.LogInfo($"{MyPluginInfo.PLUGIN_GUID} v{MyPluginInfo.PLUGIN_VERSION} has loaded!");
         }
 
-        internal static void Patch()
+        internal static void Hook()
         {
-            Harmony ??= new Harmony(MyPluginInfo.PLUGIN_GUID);
+            Logger.LogDebug("Hooking...");
 
-            Logger.LogDebug("Patching...");
+            /*
+             *  Add to the Hooks list for each method you're patching with:
+             *
+             *  Hooks.Add(new Hook(
+             *      typeof(Class).GetMethod("Method", AccessTools.allDeclared),
+             *      CustomClass.CustomMethod));
+             */
 
-            Harmony.PatchAll();
+            Hooks.Add(new Hook(
+                    typeof(GameNetcodeStuff.PlayerControllerB).GetMethod("Update", AccessTools.allDeclared),
+                    PlayerExhaustedDeath.PlayerControllerB_Update));
 
-            Logger.LogDebug("Finished patching!");
+            Hooks.Add(new Hook(
+                    typeof(BoomboxItem).GetMethod("Start"),
+                    BodaliciousBoomBox.BoomboxItem_Start));
+
+            Logger.LogDebug("Finished Hooking!");
         }
 
-        internal static void Unpatch()
+        internal static void Unhook()
         {
-            Logger.LogDebug("Unpatching...");
+            Logger.LogDebug("Unhooking...");
 
-            Harmony?.UnpatchSelf();
+            foreach (var detour in Hooks)
+                detour.Undo();
+            Hooks.Clear();
 
-            Logger.LogDebug("Finished unpatching!");
+            Logger.LogDebug("Finished Unhooking!");
         }
     }
 }

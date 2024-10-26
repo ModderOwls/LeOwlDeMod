@@ -73,7 +73,6 @@
               "version": "[1.*, )"
             },
             "UnityEngine.Modules": {
-              "include": "Compile",
               "suppressParent": "All",
               "target": "Package",
               "version": "[2022.3.9, )"
