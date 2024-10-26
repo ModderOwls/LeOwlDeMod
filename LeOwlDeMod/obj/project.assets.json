@@ -2898,7 +2898,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lfjva\\.nuget\\packages\\": {}
+    "C:\\Users\\Gebruiker\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2906,11 +2906,11 @@
       "projectUniqueName": "D:\\Modding\\LethalCompany\\LeOwlDeMod\\LeOwlDeMod\\LeOwlDeMod.csproj",
       "projectName": "LeOwlDeMod",
       "projectPath": "D:\\Modding\\LethalCompany\\LeOwlDeMod\\LeOwlDeMod\\LeOwlDeMod.csproj",
-      "packagesPath": "C:\\Users\\lfjva\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
       "outputPath": "D:\\Modding\\LethalCompany\\LeOwlDeMod\\LeOwlDeMod\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lfjva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2920,7 +2920,6 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.bepinex.dev/v3/index.json": {},
         "https://nuget.bepinex.dev/v3/index.json": {}
       },
       "frameworks": {
@@ -2992,7 +2991,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

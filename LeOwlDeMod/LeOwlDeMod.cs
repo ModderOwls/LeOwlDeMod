@@ -1,6 +1,7 @@
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
+using LeOwlDeMod.Patches;
 using LobbyCompatibility.Attributes;
 using LobbyCompatibility.Enums;
 
@@ -19,6 +20,8 @@ namespace LeOwlDeMod
         {
             Logger = base.Logger;
             Instance = this;
+
+            Harmony.CreateAndPatchAll(typeof(PlayerExhaustDeath));
 
             Patch();
 
