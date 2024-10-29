@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Modding\\LethalCompany\\LeOwlDeMod\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2391BEA9-E3B5-4B6D-9C2D-358B674BD4D1}|LeOwlDeMod\\LeOwlDeMod.csproj|d:\\modding\\lethalcompany\\leowldemod\\leowldemod\\hooks\\bodaliciousboombox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2391BEA9-E3B5-4B6D-9C2D-358B674BD4D1}|LeOwlDeMod\\LeOwlDeMod.csproj|solutionrelative:leowldemod\\hooks\\bodaliciousboombox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2391BEA9-E3B5-4B6D-9C2D-358B674BD4D1}|LeOwlDeMod\\LeOwlDeMod.csproj|d:\\modding\\lethalcompany\\leowldemod\\leowldemod\\leowldemod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2391BEA9-E3B5-4B6D-9C2D-358B674BD4D1}|LeOwlDeMod\\LeOwlDeMod.csproj|solutionrelative:leowldemod\\leowldemod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2391BEA9-E3B5-4B6D-9C2D-358B674BD4D1}|LeOwlDeMod\\LeOwlDeMod.csproj|d:\\modding\\lethalcompany\\leowldemod\\leowldemod\\hooks\\playerexhausteddeath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2391BEA9-E3B5-4B6D-9C2D-358B674BD4D1}|LeOwlDeMod\\LeOwlDeMod.csproj|solutionrelative:leowldemod\\hooks\\playerexhausteddeath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2391BEA9-E3B5-4B6D-9C2D-358B674BD4D1}|LeOwlDeMod\\LeOwlDeMod.csproj|d:\\modding\\lethalcompany\\leowldemod\\leowldemod\\hooks\\bodalicious.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2391BEA9-E3B5-4B6D-9C2D-358B674BD4D1}|LeOwlDeMod\\LeOwlDeMod.csproj|solutionrelative:leowldemod\\hooks\\bodalicious.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,24 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BodaliciousBoomBox.cs",
-              "DocumentMoniker": "D:\\Modding\\LethalCompany\\LeOwlDeMod\\LeOwlDeMod\\Hooks\\BodaliciousBoomBox.cs",
-              "RelativeDocumentMoniker": "LeOwlDeMod\\Hooks\\BodaliciousBoomBox.cs",
-              "ToolTip": "D:\\Modding\\LethalCompany\\LeOwlDeMod\\LeOwlDeMod\\Hooks\\BodaliciousBoomBox.cs",
-              "RelativeToolTip": "LeOwlDeMod\\Hooks\\BodaliciousBoomBox.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Bodalicious.cs",
+              "DocumentMoniker": "D:\\Modding\\LethalCompany\\LeOwlDeMod\\LeOwlDeMod\\Hooks\\Bodalicious.cs",
+              "RelativeDocumentMoniker": "LeOwlDeMod\\Hooks\\Bodalicious.cs",
+              "ToolTip": "D:\\Modding\\LethalCompany\\LeOwlDeMod\\LeOwlDeMod\\Hooks\\Bodalicious.cs",
+              "RelativeToolTip": "LeOwlDeMod\\Hooks\\Bodalicious.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T21:29:45.266Z",
+              "WhenOpened": "2024-10-29T14:37:15.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PlayerExhaustedDeath.cs",
               "DocumentMoniker": "D:\\Modding\\LethalCompany\\LeOwlDeMod\\LeOwlDeMod\\Hooks\\PlayerExhaustedDeath.cs",
               "RelativeDocumentMoniker": "LeOwlDeMod\\Hooks\\PlayerExhaustedDeath.cs",
@@ -47,19 +47,21 @@
               "RelativeToolTip": "LeOwlDeMod\\Hooks\\PlayerExhaustedDeath.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T20:26:13.307Z"
+              "WhenOpened": "2024-10-26T20:26:13.307Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "LeOwlDeMod.cs",
               "DocumentMoniker": "D:\\Modding\\LethalCompany\\LeOwlDeMod\\LeOwlDeMod\\LeOwlDeMod.cs",
               "RelativeDocumentMoniker": "LeOwlDeMod\\LeOwlDeMod.cs",
               "ToolTip": "D:\\Modding\\LethalCompany\\LeOwlDeMod\\LeOwlDeMod\\LeOwlDeMod.cs",
               "RelativeToolTip": "LeOwlDeMod\\LeOwlDeMod.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACkAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T20:25:59.54Z"
+              "WhenOpened": "2024-10-26T20:25:59.54Z",
+              "EditorCaption": ""
             }
           ]
         }

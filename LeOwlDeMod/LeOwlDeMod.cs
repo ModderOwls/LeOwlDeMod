@@ -14,6 +14,7 @@ namespace LeOwlDeMod
 {
     [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
     [BepInDependency("BMX.LobbyCompatibility", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency(LethalLib.Plugin.ModGUID)]
     [LobbyCompatibility(CompatibilityLevel.ClientOnly, VersionStrictness.None)]
     public class LeOwlDeMod : BaseUnityPlugin
     {
@@ -21,8 +22,7 @@ namespace LeOwlDeMod
         internal new static ManualLogSource Logger { get; private set; } = null!;
         internal static List<IDetour> Hooks { get; set; } = new List<IDetour>();
 
-        public static AssetBundle customAssets;
-        public static GameObject prefabBodalicious;
+        public static AssetBundle bundleBodalicious;
 
         private void Awake()
         {
@@ -30,16 +30,8 @@ namespace LeOwlDeMod
             Instance = this;
 
             string sAssemblyLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            customAssets = AssetBundle.LoadFromFile(Path.Combine(sAssemblyLocation, "modassets"));
-            if (customAssets == null)
-            {
-                Logger.LogInfo($"custom assets file not found!");
-                return;
-            }
 
-            Logger.LogInfo($"all paths: " + customAssets.GetAllAssetNames());
-
-            prefabBodalicious = customAssets.LoadAsset<GameObject>("Bodalicious");
+            Bodalicious.Initialize(ref bundleBodalicious, AssetBundle.LoadFromFile(Path.Combine(sAssemblyLocation, "bodalicious")));
 
             Hook();
 
@@ -61,10 +53,6 @@ namespace LeOwlDeMod
             Hooks.Add(new Hook(
                     typeof(GameNetcodeStuff.PlayerControllerB).GetMethod("Update", AccessTools.allDeclared),
                     PlayerExhaustedDeath.PlayerControllerB_Update));
-
-            Hooks.Add(new Hook(
-                    typeof(BoomboxItem).GetMethod("Start"),
-                    BodaliciousBoomBox.BoomboxItem_Start));
 
             Logger.LogDebug("Finished Hooking!");
         }

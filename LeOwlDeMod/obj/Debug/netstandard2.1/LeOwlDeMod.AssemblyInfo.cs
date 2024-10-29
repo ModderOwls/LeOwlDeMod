@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LeOwlDeMod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97c381787d3a47a34d583d428f4f62575dee1c7f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11252695a6ea36dbf5f297b009f87cdd8b60b329")]
 [assembly: System.Reflection.AssemblyProductAttribute("LeOwlDeMod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LeOwlDeMod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

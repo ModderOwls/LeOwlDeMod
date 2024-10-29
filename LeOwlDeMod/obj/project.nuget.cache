@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WfiX6EqAloo=",
+  "dgSpecHash": "zKcu/OQBDHk=",
   "success": true,
   "projectFilePath": "D:\\Modding\\LethalCompany\\LeOwlDeMod\\LeOwlDeMod\\LeOwlDeMod.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Gebruiker\\.nuget\\packages\\bepinex.baselib\\5.4.20\\bepinex.baselib.5.4.20.nupkg.sha512",
     "C:\\Users\\Gebruiker\\.nuget\\packages\\bepinex.core\\5.4.21\\bepinex.core.5.4.21.nupkg.sha512",
     "C:\\Users\\Gebruiker\\.nuget\\packages\\bepinex.plugininfoprops\\2.1.0\\bepinex.plugininfoprops.2.1.0.nupkg.sha512",
+    "C:\\Users\\Gebruiker\\.nuget\\packages\\evaisa.lethallib\\0.16.1\\evaisa.lethallib.0.16.1.nupkg.sha512",
     "C:\\Users\\Gebruiker\\.nuget\\packages\\harmonyx\\2.7.0\\harmonyx.2.7.0.nupkg.sha512",
     "C:\\Users\\Gebruiker\\.nuget\\packages\\lethalcompany.gamelibs.steam\\64.0.0-ngd.0\\lethalcompany.gamelibs.steam.64.0.0-ngd.0.nupkg.sha512",
     "C:\\Users\\Gebruiker\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

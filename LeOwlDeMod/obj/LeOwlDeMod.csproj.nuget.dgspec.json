@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[2.*, )"
             },
+            "Evaisa.LethalLib": {
+              "target": "Package",
+              "version": "[0.*, )"
+            },
             "LethalCompany.GameLibs.Steam": {
               "suppressParent": "All",
               "target": "Package",
